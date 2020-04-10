@@ -9,7 +9,12 @@ const fetchMyIP = (callback) => {
     callback(error,ip);
 
   })
-    
+  
+  const fetchMyIpCoords = (ip, callback) => {
+  request(`https://ipvigilante.com/json/${ip}`(error, response, body))
+
+
+  }
 
 //     if (error) {
 //       console.log('error:', error); 
